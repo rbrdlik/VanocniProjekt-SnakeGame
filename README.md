@@ -13,5 +13,20 @@ Cílem je nasbírat co nejvíce bodů tím, že budeš jíst **vánoční perní
 
 
 
+## 🔊 Zvuky ve hře
+Hra obsahuje vlastní zvuky:
+- **🎵 Menu**
+- **🍪 Snězení perníčku**
+- **💀 Smrt hada**
+
+
+
 ## 📸 Ukázka
 ![SnakeGame Vánoční Edice](https://i.ibb.co/FqgrbHg/snakegame.png)
+
+
+
+## 🚀 Jak spustit hru?
+1. Naklonuj nebo stáhni tento repozitář:
+   ```bash
+   git clone https://github.com/tvoje-jmeno/vanocni-snake.git
