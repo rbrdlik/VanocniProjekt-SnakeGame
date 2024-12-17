@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+    <Asset Type="Graphics:FontDescription">
+        <FontName>segoeuithibd</FontName>
+        <Size>16</Size>
+        <Spacing>0</Spacing>
+        <UseKerning>true</UseKerning>
+        <Style>Bold</Style>
+        <CharacterRegions>
+            <CharacterRegion>
+                <Start> </Start>
+                <End>~</End>
+            </CharacterRegion>
+            <CharacterRegion>
+                <Start>ě</Start>
+                <End>ž</End>
+            </CharacterRegion>
+            <CharacterRegion>
+                <Start>Á</Start>
+                <End>Ž</End>
+            </CharacterRegion>
+            <CharacterRegion>
+                <Start>á</Start>
+                <End>ž</End>
+            </CharacterRegion>
+            <CharacterRegion>
+                <Start>0</Start>
+                <End>9</End>
+            </CharacterRegion>
+        </CharacterRegions>
+    </Asset>
+</XnaContent>

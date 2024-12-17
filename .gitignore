@@ -1,0 +1,13 @@
+# Build files
+bin/
+obj/
+
+# Rider / JetBrains files
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Log files
+*.log

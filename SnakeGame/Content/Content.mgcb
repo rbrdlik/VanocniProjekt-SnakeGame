@@ -1,0 +1,43 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+
+/build:Textures/Body.png;Textures/Body.png
+/build:Textures/DeadBody.png;Textures/DeadBody.png
+/build:Textures/DeadHead.png;Textures/DeadHead.png
+/build:Textures/Empty.png;Textures/Empty.png
+/build:Textures/Food.png;Textures/Food.png
+/build:Textures/Head.png;Textures/Head.png
+/build:Textures/Logo.png;Textures/Logo.png
+/build:icon.ico;icon.ico
+
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:Fonts/Font.spritefont;Fonts/Font.spritefont
+
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Eat.wav;Sounds/Eat.wav
+/build:Sounds/MenuSound.wav;Sounds/MenuSound.wav
+/build:Sounds/Death.wav;Sounds/Death.wav
