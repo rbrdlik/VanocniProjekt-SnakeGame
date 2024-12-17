@@ -30,4 +30,4 @@ Hra obsahuje vlastní zvuky:
 ## 🚀 Jak spustit hru?
 1. Naklonuj nebo stáhni tento repozitář:
    ```bash
-   git clone https://github.com/tvoje-jmeno/vanocni-snake.git
+   git clone https://github.com/rbrdlik/VanocniProjekt-SnakeGame.git
