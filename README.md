@@ -2,6 +2,7 @@
 
 Tato hra je **vánoční verze** klasické a oblíbené hry **Snake**. 🐍  
 Cílem je nasbírat co nejvíce bodů tím, že budeš jíst **vánoční perníčky 🍪**.
+Vytvořeno pomocí **MonoGame**
 
 
 
