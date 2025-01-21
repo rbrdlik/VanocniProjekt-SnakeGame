@@ -3,7 +3,8 @@ namespace SnakeGame
     public enum GameState
     {
         Menu,
-        Countdown,
+        CountdownWinter,
+        CountdownForest,
         Playing,
         GameOver
     }

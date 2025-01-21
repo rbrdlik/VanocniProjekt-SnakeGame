@@ -7,6 +7,7 @@ namespace SnakeGame
     public static class GameLogic
     {
         public static GameState CurrentState = GameState.Menu;
+        public static Maps ChoosedMap = Maps.Winter;
 
         public const int CellSize = 35;
         public const int GridWidth = 17;
@@ -42,13 +43,27 @@ namespace SnakeGame
             switch (CurrentState)
             {
                 case GameState.Menu:
-                    if (keyboard.GetPressedKeys().Length > 0)
+                    if (keyboard.IsKeyDown(Keys.NumPad1) || keyboard.IsKeyDown(Keys.D1))
                     {
-                        CurrentState = GameState.Countdown;
+                        CurrentState = GameState.CountdownWinter;
+                        ChoosedMap = Maps.Winter;
+                    }
+                    else if ((keyboard.IsKeyDown(Keys.NumPad2) || keyboard.IsKeyDown(Keys.D2)) && GameLogic.HighScore >= 10)
+                    {
+                        CurrentState = GameState.CountdownForest;
+                        ChoosedMap = Maps.Forest;
                     }
                     break;
 
-                case GameState.Countdown:
+                case GameState.CountdownWinter:
+                    CountdownTimer -= gameTime.ElapsedGameTime.TotalSeconds;
+                    if (CountdownTimer <= 0)
+                    {
+                        CurrentState = GameState.Playing;
+                    }
+                    break;
+                
+                case GameState.CountdownForest:
                     CountdownTimer -= gameTime.ElapsedGameTime.TotalSeconds;
                     if (CountdownTimer <= 0)
                     {
@@ -108,7 +123,13 @@ namespace SnakeGame
                 AssetLoader.EatSoundInstance.Volume = 0.2f;
                 AssetLoader.EatSoundInstance.IsLooped = false;
                 AssetLoader.EatSoundInstance.Play();
-                Score++;
+                if (ChoosedMap == Maps.Winter)
+                {
+                    Score++;
+                } else if (ChoosedMap == Maps.Forest)
+                {
+                    Score += 2;
+                }
                 UpdateHighScore();
                 SpawnFood();
             }

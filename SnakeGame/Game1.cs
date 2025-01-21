@@ -40,7 +40,7 @@ namespace SnakeGame
         }
 
         protected override void Update(GameTime gameTime)
-        {
+        {        
             GameLogic.Update(gameTime);
             base.Update(gameTime);
         }
